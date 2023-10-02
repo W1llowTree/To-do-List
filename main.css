@@ -1,0 +1,65 @@
+.container {
+    margin-top: 2rem;
+    height: calc(100vh - 4rem - 34px);
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    min-height: 80%;
+}
+
+.section {
+    width: calc(50% - 1rem);
+
+    border-radius: 0.5rem;
+    padding: 2rem;
+
+    min-height: 80%;
+}
+
+@media screen and (max-width 480px) {
+    .section {
+        width: 100%;
+    
+        border-radius: 0.5rem;
+        padding: 2rem;
+    }
+}
+
+#task-add {
+     background-color: grey;
+}
+
+#list-view {
+    background-color: aqua;
+}
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    padding: 0.5rem;
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+}
+
+.delete-button {
+    border-radius: 100%;
+    padding: 0.1rem;
+    font-size: 0.6rem;
+}
